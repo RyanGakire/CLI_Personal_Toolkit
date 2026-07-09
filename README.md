@@ -6,4 +6,4 @@ This is a simple toolkit to write and store notes. It easy to use.
 - Delete your saved notes
 
 ## Author
-('RyanGakire')
+**RyanGakire**
