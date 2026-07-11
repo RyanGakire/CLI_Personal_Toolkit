@@ -1,62 +1,44 @@
 #!/usr/bin/python3
-nbr = int(input('''
+print('''
       = == = == = == = == = ==
       WELCOME TO THE TOOLKIT!!
       = == = == = == = == = ==
         1. Add a Note
         2. View Notes
         3. Delete a Note
-        4. Search Notes
-        5. Exit
-        
-        Choose a number: '''
-)
+        4. Exit
+        '''
 )
 
-while nbr < 1 or nbr > 5:
-        print('The number you entered is not an option. Try again.')
-        nbr = int(input('''
-      = == = == = == = == = ==
-      WELCOME TO THE TOOLKIT!!
-      = == = == = == = == = ==
-        1. Add a Note
-        2. View Notes
-        3. Delete a Note
-        4. Search Notes
-        5. Exit
+while True:
+        nbr = int(input('Enter your choice number: '))
+        if nbr == 4:
+                print('''
+                = == = == = == = ==
+                THANK YOU! 
+                APPLICATION CLOSED
+                = == = == = == = ==
+                ''')
+                break
         
-        Choose a number: '''
-)
-)
-
-if nbr == 1:
-        print('''
-              = == = == = == = ==
-              ADD YOUR NOTES
-              = == = == = == = ==
-              ''')
-elif nbr == 2:
-        print('''
-              = == = == = == = ==
-                My Notes
-              = == = == = == = ==
-              ''')
-elif nbr == 3:
-        print('''
-              = == = == = == = ==
-                DELETE A NOTE
-              = == = == = == = ==
-              ''')
-elif nbr == 4:
-        print('''
-              = == = == = == = ==
-               Search for Notes
-              = == = == = == = ==
-              ''')
-else:
-        print('''
-              = == = == = == = ==
-              THANK YOU! 
-              APPLICATION CLOSED
-              = == = == = == = ==
-              ''')
+        if 1 <= nbr <= 3:
+                if nbr == 1:
+                        print('''
+                        = == = == = == = ==
+                        ADD YOUR NOTES
+                        = == = == = == = ==
+                        ''')
+                elif nbr == 2:
+                        print('''
+                        = == = == = == = ==
+                        My Notes
+                        = == = == = == = ==
+                        ''')
+                else:
+                        print('''
+                        = == = == = == = ==
+                        DELETE A NOTE
+                        = == = == = == = ==
+                        ''')
+        else:
+                print('The number you entered is not a choice. Try again')
